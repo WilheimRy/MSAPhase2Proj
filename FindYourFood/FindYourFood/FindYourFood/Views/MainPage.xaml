@@ -5,8 +5,22 @@
   
   <StackLayout BackgroundColor="White">
       <Entry x:Name="MyEntry" Placeholder="What do you want to eat?" Completed="MyEntry_OnCompleted" />
+
+    <ListView x:Name="RecipeView" RowHeight="160" SeparatorColor="Gray">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>           
+            <StackLayout VerticalOptions="FillAndExpand" Padding="5">
+
+              <Label Text="{Binding title}" XAlign="Center"></Label>
+              <Button ></Button>
+              <Image Source="{Binding imgUrl}" Aspect="AspectFit"></Image>
+<!--              <Label Text="{Binding recipeUrl}"></Label>-->
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
       
-  
-      <Entry x:Name="TestEntry" />
     </StackLayout>
 </ContentPage>

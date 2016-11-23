@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<p:ListDataPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:p="clr-namespace:Xamarin.Forms.Pages;assembly=Xamarin.Forms.Pages"
+             x:Class="FindYourFood.SessionPage"
+             Title="Food For Today" StyleClass="Events">
+
+  <!--<p:ListDataPage.DataSource>
+    <p:JsonDataSource name="myData" Source="http://food2fork.com/api/search?key=38008dc1ca51f61c514c7e1393d55372" />
+  </p:ListDataPage.DataSource>-->
+
+   <!--CUSTOM LISTITEM-->
+    <p:ListDataPage.DefaultItemTemplate>
+	    <DataTemplate>
+	        <ViewCell>
+	            <p:CardView
+                x:Name="ListItemControl"
+	                Title="{p:DataSourceBinding title}"
+	                Detail="{p:DataSourceBinding room}"
+					ImageSource="{p:DataSourceBinding image}"
+	                DataSource="{Binding Value}"
+	                HeightRequest="90"
+	            >
+	            </p:CardView>
+	        </ViewCell>
+	    </DataTemplate>
+	</p:ListDataPage.DefaultItemTemplate>
+	
+
+</p:ListDataPage>

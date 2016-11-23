@@ -23,7 +23,8 @@ namespace FindYourFood.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            LoadApplication(new Appl());
+
 
             return base.FinishedLaunching(app, options);
         }
