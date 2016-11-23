@@ -6,15 +6,20 @@
   <StackLayout BackgroundColor="White">
       <Entry x:Name="MyEntry" Placeholder="What do you want to eat?" Completed="MyEntry_OnCompleted" />
 
-    <ListView x:Name="RecipeView" RowHeight="160" SeparatorColor="Gray">
+    <ListView x:Name="RecipeListView" RowHeight="160" SeparatorColor="Gray" ItemTapped="RecipeListView_OnItemTapped">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>           
-            <StackLayout VerticalOptions="FillAndExpand" Padding="5">
-
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="5">
               <Label Text="{Binding title}" XAlign="Center"></Label>
-              <Button ></Button>
-              <Image Source="{Binding imgUrl}" Aspect="AspectFit"></Image>
+              <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+              <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand"> 
+                <Image Source="{Binding imgUrl}" Aspect="AspectFit"></Image>
+              </StackLayout>
+              <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                <Button Text="Like it" Clicked="AddtoRecipe" />
+              </StackLayout>
+              </StackLayout>
 <!--              <Label Text="{Binding recipeUrl}"></Label>-->
             </StackLayout>
           </ViewCell>

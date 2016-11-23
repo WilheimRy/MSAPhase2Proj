@@ -51,6 +51,14 @@ C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Dro
 C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\res\values\styles.xml
 C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\R.cs.flag
 C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\uploadflags.txt
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\Microsoft.WindowsAzure.Mobile.Ext.dll
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\Microsoft.WindowsAzure.Mobile.xml
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\Microsoft.WindowsAzure.Mobile.Ext.xml
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\FindYourFood.Droid.dll.mdb
 C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\FindYourFood.dll.mdb
 C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\Java.Interop.dll.mdb

@@ -20,13 +20,13 @@ namespace FindYourFood.Views {
         private global::Xamarin.Forms.Entry MyEntry;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.ListView RecipeView;
+        private global::Xamarin.Forms.ListView RecipeListView;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainPage));
             MyEntry = this.FindByName<global::Xamarin.Forms.Entry>("MyEntry");
-            RecipeView = this.FindByName<global::Xamarin.Forms.ListView>("RecipeView");
+            RecipeListView = this.FindByName<global::Xamarin.Forms.ListView>("RecipeListView");
         }
     }
 }

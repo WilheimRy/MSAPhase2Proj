@@ -2,12 +2,14 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\__library_projects__\Microsoft.WindowsAzure.Mobile.Ext\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\__library_projects__\ModernHttpClient\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Theme.Android\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\Microsoft.WindowsAzure.Mobile.Ext\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\ModernHttpClient\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
@@ -15,6 +17,7 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\__library_projects__\Microsoft.WindowsAzure.Mobile.Ext.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\__library_projects__\ModernHttpClient.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
