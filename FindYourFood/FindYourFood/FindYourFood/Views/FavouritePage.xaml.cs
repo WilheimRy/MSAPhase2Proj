@@ -48,6 +48,10 @@ namespace FindYourFood.Views
         {
             UploadingIndicator.IsRunning = true;
             List<User> list = await AzureManager.AzureManagerInstance.GetAllRecipes();
+            if (list.Count == 0)
+            {
+                await DisplayAlert("No Favourites!", "Try to add in some food.", "Ok");
+            }
             RecipeListView.ItemsSource = list;
             UploadingIndicator.IsRunning = false;
         }

@@ -34,11 +34,8 @@ C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood\bin
 C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.Views.RootPage.xaml.g.cs
 C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.Views.MenuPage.xaml.g.cs
 C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.Views.FavouritePage.xaml.g.cs
-C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.Views.WebViewPage.xaml.g.cs
 C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.csprojResolveAssemblyReference.cache
 C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.Views.UpdateView.xaml.g.cs
-C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.dll.mdb
-C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood\bin\Debug\FindYourFood.dll.mdb
 C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.csproj.App.config
 C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.csprojResolveAssemblyReference.cache
 C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.Views.MainPage.xaml.g.cs
@@ -82,3 +79,8 @@ C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood\bin\Deb
 C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.Views.RegisterPage.xaml.g.cs
 C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.dll.mdb
 C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood\bin\Debug\FindYourFood.dll.mdb
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.Views.RecipeWebView.xaml.g.cs
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.Views.LoginPage.xaml.g.cs
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.Views.RegisterPage.xaml.g.cs
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood\obj\Debug\FindYourFood.dll.mdb
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood\bin\Debug\FindYourFood.dll.mdb

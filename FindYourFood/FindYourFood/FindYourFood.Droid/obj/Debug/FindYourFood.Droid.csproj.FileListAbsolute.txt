@@ -94,7 +94,6 @@ C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Dro
 C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\FindYourFood.Droid.dll.mdb
 C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\FindYourFood.Droid.dll.config
 C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\FindYourFood.Droid.dll
 C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\FindYourFood.Droid.pdb
@@ -192,4 +191,5 @@ C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood.Droid\o
 C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\FindYourFood.Droid.dll.mdb
-C:\Users\wmd000\Desktop\LoginFood\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\FindYourFood.Droid.dll.mdb
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\obj\Debug\FindYourFood.Droid.dll.mdb
+C:\Users\wmd000\Desktop\MSAPhase2Proj\FindYourFood\FindYourFood\FindYourFood.Droid\bin\Debug\FindYourFood.Droid.dll.mdb

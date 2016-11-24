@@ -74,5 +74,6 @@ namespace FindYourFood.Views
             NavigationPage.SetHasNavigationBar(this, false); // this clobbers the entire nav bar
          
         }
+           
     }
 }
