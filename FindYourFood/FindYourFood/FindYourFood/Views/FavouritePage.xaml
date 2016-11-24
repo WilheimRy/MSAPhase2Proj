@@ -17,6 +17,7 @@
                 </StackLayout>
                 <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
                   <Button Text="Remove" Opacity="0.5" Clicked="Button_DeleteRecipe" FontFamily="Lato" />
+                  <Button Text="Edit" Opacity="0.5" Clicked="Button_OnClickedUpdate" FontFamily="Lato" />           
                 </StackLayout>
               </StackLayout>
             </StackLayout>

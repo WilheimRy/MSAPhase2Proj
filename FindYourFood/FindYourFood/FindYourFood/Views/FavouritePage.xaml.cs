@@ -60,7 +60,7 @@ namespace FindYourFood.Views
             }
             SelectedRecipe = e.Item as myRecipe;
 
-            WebViewPage webViewPage = null;
+            RecipeWebViewPage recipeWebViewPage = null;
 
             if ((e.Item as myRecipe) != null)
             {
@@ -78,9 +78,28 @@ namespace FindYourFood.Views
                 }
 
 
-                webViewPage = new WebViewPage(tempMyRecipe);
+                recipeWebViewPage = new RecipeWebViewPage(tempMyRecipe);
             }
-            await Navigation.PushAsync(webViewPage);
+            await Navigation.PushAsync(recipeWebViewPage);
+        }
+
+        private async void Button_OnClickedUpdate(object sender, EventArgs e)
+        {
+            if (SelectedRecipe != null)
+            {
+                var result = await DisplayAlert("Update Recipe", "Really want to Edit this recipe?", "Ok", "Cancel");
+                UpdateView updateView = null;
+                if (result == true)
+                {
+                    updateView= new UpdateView(SelectedRecipe);
+                    await Navigation.PushAsync(updateView);
+                }
+            }
+            else
+            {
+                await DisplayAlert("No Recipe Selected!", "Please select one recipe.", "Ok");
+            }
+
         }
     }
 }

@@ -44,6 +44,9 @@
       <DependentUpon>SessionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\MenuPageViewModel.cs" />
+    <Compile Include="Views\FaceBookWebView.xaml.cs">
+      <DependentUpon>FaceBookWebView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\FavouritePage.xaml.cs">
       <DependentUpon>FavouritePage.xaml</DependentUpon>
     </Compile>
@@ -56,8 +59,11 @@
     <Compile Include="Views\RootPage.xaml.cs">
       <DependentUpon>RootPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\WebViewPage.xaml.cs">
-      <DependentUpon>WebViewPage.xaml</DependentUpon>
+    <Compile Include="Views\UpdateView.xaml.cs">
+      <DependentUpon>UpdateView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecipeWebView.xaml.cs">
+      <DependentUpon>RecipeWebView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -152,7 +158,19 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\WebViewPage.xaml">
+    <EmbeddedResource Include="Views\RecipeWebView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\UpdateView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\FaceBookWebView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

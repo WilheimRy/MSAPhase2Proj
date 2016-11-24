@@ -54,6 +54,8 @@ namespace FindYourFood
             return await this.myRecipeTable.Where(x => x.imgUrl == myRecipe.imgUrl).ToListAsync();
         }
 
+
+
         public async Task DeleteRecipe(myRecipe myRecipe)
         {
             await this.myRecipeTable.DeleteAsync(myRecipe);

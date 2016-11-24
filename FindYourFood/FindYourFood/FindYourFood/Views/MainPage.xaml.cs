@@ -114,7 +114,7 @@ namespace FindYourFood.Views
             }
             SelectedRecipe = e.Item as myRecipe;
 
-            WebViewPage webViewPage=null;
+            RecipeWebViewPage recipeWebViewPage=null;
 
             if ((e.Item as myRecipe) != null)
             {
@@ -132,9 +132,9 @@ namespace FindYourFood.Views
                 }
 
 
-                    webViewPage = new WebViewPage(tempMyRecipe);
+                    recipeWebViewPage = new RecipeWebViewPage(tempMyRecipe);
             }
-            await Navigation.PushAsync(webViewPage);
+            await Navigation.PushAsync(recipeWebViewPage);
         }
     }
 }

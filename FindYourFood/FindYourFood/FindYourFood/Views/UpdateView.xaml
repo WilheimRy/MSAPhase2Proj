@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FindYourFood.Views.UpdateView">
+  <StackLayout BackgroundColor="White">
+    <Entry x:Name="MyEntry" Placeholder="Enter new title"  />
+    <Button Text="Done" FontFamily="Lato" TextColor="White" BackgroundColor="Blue" Opacity="0.4" Clicked="Button_OnClicked"></Button>
+    <ActivityIndicator x:Name="UploadingIndicator" Color="Blue" Opacity="0.5" IsRunning="false" Grid.Row="0" />
+    <ListView x:Name="RecipeListView" RowHeight="160" SeparatorColor="Gray">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="5">
+              <Label Text="{Binding title}" HorizontalTextAlignment="Center" FontFamily="Lato"></Label>
+              <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                  <Image Source="{Binding imgUrl}" Aspect="AspectFit"></Image>
+                </StackLayout>
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                </StackLayout>
+              </StackLayout>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+
+</ContentPage>
