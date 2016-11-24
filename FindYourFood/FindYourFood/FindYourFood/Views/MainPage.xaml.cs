@@ -20,6 +20,7 @@ namespace FindYourFood.Views
         public MainPage()
         {
             InitializeComponent();
+            DisplayM();
         }
 
         private async void MyEntry_OnCompleted(object sender, EventArgs e)
@@ -27,8 +28,14 @@ namespace FindYourFood.Views
             await DisplayMenu();
         }
 
+        private async void DisplayM()
+        {
+            await DisplayMenu();
+        }
+
         private async Task DisplayMenu()
         {
+            UploadingIndicator.IsRunning = true;
             string input = "";
             if (MyEntry.Text != null)
             {
@@ -40,7 +47,7 @@ namespace FindYourFood.Views
             if (input == "")
             {
                 uri =
-                    "https://edamam-recipe-search-and-diet-v1.p.mashape.com/search?_app_id=4d184a43&_app_key=80e956f0544de255e27075a862bd3d5d&q=111";
+                    "https://edamam-recipe-search-and-diet-v1.p.mashape.com/search?_app_id=4d184a43&_app_key=80e956f0544de255e27075a862bd3d5d&q=egg";
             }
             else
             {
@@ -68,6 +75,9 @@ namespace FindYourFood.Views
             }
 
             RecipeListView.ItemsSource = recipeDisList;
+            UploadingIndicator.IsRunning = false;
+            SelectedRecipe = null;
+
         }
 
 
@@ -96,13 +106,35 @@ namespace FindYourFood.Views
             }
         }
 
-        private void RecipeListView_OnItemTapped(object sender, ItemTappedEventArgs e)
+        private async void RecipeListView_OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             if (e.Item == null)
             {
                 return; //ItemSelected is called on deselection, which results in SelectedItem being set to null
             }
             SelectedRecipe = e.Item as myRecipe;
+
+            WebViewPage webViewPage=null;
+
+            if ((e.Item as myRecipe) != null)
+            {
+                myRecipe tempMyRecipe = e.Item as myRecipe;
+
+                List<myRecipe> list = await AzureManager.AzureManagerInstance.IsRecipeExists(SelectedRecipe);
+
+                if (list.Count > 0)
+                {
+                    tempMyRecipe.Existed = true;
+                }
+                else
+                {
+                    tempMyRecipe.Existed = false;
+                }
+
+
+                    webViewPage = new WebViewPage(tempMyRecipe);
+            }
+            await Navigation.PushAsync(webViewPage);
         }
     }
 }

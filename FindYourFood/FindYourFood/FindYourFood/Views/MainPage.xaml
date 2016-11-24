@@ -5,7 +5,7 @@
   
   <StackLayout BackgroundColor="White">
       <Entry x:Name="MyEntry" Placeholder="What do you want to eat?" Completed="MyEntry_OnCompleted" />
-
+    <ActivityIndicator x:Name="UploadingIndicator" Color="Blue" Opacity="0.5" IsRunning="false" Grid.Row="0" />
     <ListView x:Name="RecipeListView" RowHeight="160" SeparatorColor="Gray" ItemTapped="RecipeListView_OnItemTapped">
       <ListView.ItemTemplate>
         <DataTemplate>
@@ -17,7 +17,7 @@
                 <Image Source="{Binding imgUrl}" Aspect="AspectFit"></Image>
               </StackLayout>
               <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
-                <Button Text="Like it" Clicked="AddtoRecipe" />
+                <Button Text="Add to Favourite" Clicked="AddtoRecipe" FontFamily="Lato" />
               </StackLayout>
               </StackLayout>
 <!--              <Label Text="{Binding recipeUrl}"></Label>-->

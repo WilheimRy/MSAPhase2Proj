@@ -51,7 +51,7 @@ namespace FindYourFood
 
         public async Task<List<myRecipe>> IsRecipeExists(myRecipe myRecipe)
         {
-            return await this.myRecipeTable.Where(x => x.title == myRecipe.title).ToListAsync();
+            return await this.myRecipeTable.Where(x => x.imgUrl == myRecipe.imgUrl).ToListAsync();
         }
 
         public async Task DeleteRecipe(myRecipe myRecipe)

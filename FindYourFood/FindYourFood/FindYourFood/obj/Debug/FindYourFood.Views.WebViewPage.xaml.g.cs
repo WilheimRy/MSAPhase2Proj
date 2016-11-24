@@ -14,23 +14,19 @@ namespace FindYourFood.Views {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class MainPage : global::Xamarin.Forms.ContentPage {
+    public partial class WebViewPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Entry MyEntry;
+        private global::Xamarin.Forms.Button WebViewBtn;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.ActivityIndicator UploadingIndicator;
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.ListView RecipeListView;
+        private global::Xamarin.Forms.WebView Browser;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(MainPage));
-            MyEntry = this.FindByName<global::Xamarin.Forms.Entry>("MyEntry");
-            UploadingIndicator = this.FindByName<global::Xamarin.Forms.ActivityIndicator>("UploadingIndicator");
-            RecipeListView = this.FindByName<global::Xamarin.Forms.ListView>("RecipeListView");
+            this.LoadFromXaml(typeof(WebViewPage));
+            WebViewBtn = this.FindByName<global::Xamarin.Forms.Button>("WebViewBtn");
+            Browser = this.FindByName<global::Xamarin.Forms.WebView>("Browser");
         }
     }
 }

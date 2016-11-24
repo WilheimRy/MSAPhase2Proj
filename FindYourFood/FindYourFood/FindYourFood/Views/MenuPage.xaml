@@ -5,8 +5,8 @@
   </ContentPage.Padding>
   <ContentPage.Content>
     <StackLayout BackgroundColor="White">
-      <Button Text="Home" TextColor="White" BackgroundColor="Green" Command="{Binding GoHomeCommand}" />
-      <Button Text="Favourites" TextColor="White" BackgroundColor="Navy" Command="{Binding GoSecondCommand}" />
+      <Button FontFamily="Lato" Text="Home" TextColor="White" BackgroundColor="Blue" Opacity="0.45" Command="{Binding GoHomeCommand}" />
+      <Button FontFamily="Lato" Text="Favourites" TextColor="White" BackgroundColor="Navy" Command="{Binding GoSecondCommand}" />
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>

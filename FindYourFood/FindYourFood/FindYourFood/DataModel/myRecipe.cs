@@ -19,5 +19,8 @@ namespace FindYourFood.DataModel
         public string recipeUrl { get; set; }
         [JsonProperty(PropertyName = "createdAt")]
         public DateTime Date { get; set; }
+        [JsonProperty(PropertyName = "Exist")]
+        public bool Existed { get; set; }
+
     }
 }
