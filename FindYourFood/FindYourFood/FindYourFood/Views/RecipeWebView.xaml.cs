@@ -10,14 +10,14 @@ namespace FindYourFood.Views
 {
     public partial class RecipeWebViewPage : ContentPage
     {
-        public static myRecipe SelectedRecipe = null;
+        public static User SelectedRecipe = null;
 
-        public  RecipeWebViewPage(myRecipe myRecipe)
+        public  RecipeWebViewPage(User myRecipe)
         {
             InitializeComponent();
             SelectedRecipe = myRecipe;
 
-            if (SelectedRecipe.Existed == true)
+            if (SelectedRecipe.isExisted == true)
             {
                 WebViewBtn.IsVisible = false;
             }
@@ -26,7 +26,7 @@ namespace FindYourFood.Views
                 WebViewBtn.IsVisible = true;
             }
 
-            Browser.Source = myRecipe.recipeUrl;
+            Browser.Source = myRecipe.favouriteUrl;
         }
 
         private async void Button_OnClicked(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace FindYourFood.Views
             if (SelectedRecipe != null)
             {
                 //search if the selected recipe exists
-                List<myRecipe> list = await AzureManager.AzureManagerInstance.IsRecipeExists(SelectedRecipe);
+                List<User> list = await AzureManager.AzureManagerInstance.IsRecipeExists(SelectedRecipe);
 
                 if (list.Count > 0)
                 {
@@ -43,6 +43,7 @@ namespace FindYourFood.Views
                 else
                 {
                     SelectedRecipe.Date = DateTime.Now;
+                    SelectedRecipe.userName = Appl.Current.Properties["userName"].ToString();
                     await AzureManager.AzureManagerInstance.AddRecipe(SelectedRecipe);
                     await DisplayAlert("Add to Favourites", SelectedRecipe.title + " added to your favourites.", "Ok");
                 }

@@ -13,12 +13,13 @@ namespace FindYourFood
 
         private static AzureManager instance;
         private MobileServiceClient client;
-        private IMobileServiceTable<myRecipe> myRecipeTable;
+
+        private IMobileServiceTable<User> userTable;
 
         private AzureManager()
         {
             this.client = new MobileServiceClient("http://recipeappry.azurewebsites.net/");
-            this.myRecipeTable = this.client.GetTable<myRecipe>();
+            this.userTable= this.client.GetTable<User>();
         }
 
         public MobileServiceClient AzureClient
@@ -39,32 +40,45 @@ namespace FindYourFood
             }
         }
 
-        public async Task AddRecipe(myRecipe myRecipe)
+        public async Task AddRecipe(User myRecipe)
         {
-            await this.myRecipeTable.InsertAsync(myRecipe);
+            await this.userTable.InsertAsync(myRecipe);
         }
 
-        public async Task<List<myRecipe>> GetAllRecipes()
+        public async Task<List<User>> GetAllRecipes()
         {
-            return await this.myRecipeTable.ToListAsync();
+            return await this.userTable.Where(x=>x.userName== Appl.Current.Properties["userName"].ToString()).Where(x=>x.favouriteUrl!=null).ToListAsync();
         }
 
-        public async Task<List<myRecipe>> IsRecipeExists(myRecipe myRecipe)
+        public async Task<List<User>> IsRecipeExists(User myRecipe)
         {
-            return await this.myRecipeTable.Where(x => x.imgUrl == myRecipe.imgUrl).ToListAsync();
+            return await this.userTable.Where(x => x.imgUrl == myRecipe.imgUrl).ToListAsync();
+        }
+
+        public async Task DeleteRecipe(User myRecipe)
+        {
+            await this.userTable.DeleteAsync(myRecipe);
+        }
+
+        public async Task UpdateRecipe(User myRecipe)
+        {
+            await this.userTable.UpdateAsync(myRecipe);
         }
 
 
-
-        public async Task DeleteRecipe(myRecipe myRecipe)
+        //register
+        public async Task AddUser(User user)
         {
-            await this.myRecipeTable.DeleteAsync(myRecipe);
+            await this.userTable.InsertAsync(user);
         }
 
-        public async Task UpdateRecipe(myRecipe myRecipe)
+        //login
+        public async Task<List<User>> IsUserExists(User user)
         {
-            await this.myRecipeTable.UpdateAsync(myRecipe);
+            return await this.userTable.Where(x => x.userName == user.userName).ToListAsync();
         }
+
+        
 
 
 

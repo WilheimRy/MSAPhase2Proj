@@ -39,22 +39,26 @@
     <Compile Include="AzureManager.cs" />
     <Compile Include="DataModel\myRecipe.cs" />
     <Compile Include="DataModel\RecipeModel.cs" />
+    <Compile Include="DataModel\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SessionPage.xaml.cs">
       <DependentUpon>SessionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\MenuPageViewModel.cs" />
-    <Compile Include="Views\FaceBookWebView.xaml.cs">
-      <DependentUpon>FaceBookWebView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\FavouritePage.xaml.cs">
       <DependentUpon>FavouritePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegisterPage.xaml.cs">
+      <DependentUpon>RegisterPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\RootPage.xaml.cs">
       <DependentUpon>RootPage.xaml</DependentUpon>
@@ -170,7 +174,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\FaceBookWebView.xaml">
+    <EmbeddedResource Include="Views\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\RegisterPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

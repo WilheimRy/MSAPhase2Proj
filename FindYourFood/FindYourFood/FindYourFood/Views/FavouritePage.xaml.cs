@@ -10,7 +10,7 @@ namespace FindYourFood.Views
 {
     public partial class FavouritePage : ContentPage
     {
-        public static myRecipe SelectedRecipe = null;
+        public static User SelectedRecipe = null;
 
 
         public FavouritePage()
@@ -30,7 +30,7 @@ namespace FindYourFood.Views
                     UploadingIndicator.IsRunning = true;
                     await AzureManager.AzureManagerInstance.DeleteRecipe(SelectedRecipe);
                     await DisplayAlert("Remove Recipe", SelectedRecipe.title + " has been removed ", "Ok");
-                    List<myRecipe> list = await AzureManager.AzureManagerInstance.GetAllRecipes();
+                    List<User> list = await AzureManager.AzureManagerInstance.GetAllRecipes();
                     RecipeListView.ItemsSource = list;
                     UploadingIndicator.IsRunning = false;
                 }
@@ -47,7 +47,7 @@ namespace FindYourFood.Views
         private async void Button_OnClickedShowFavourites(object sender, EventArgs e)
         {
             UploadingIndicator.IsRunning = true;
-            List<myRecipe> list = await AzureManager.AzureManagerInstance.GetAllRecipes();
+            List<User> list = await AzureManager.AzureManagerInstance.GetAllRecipes();
             RecipeListView.ItemsSource = list;
             UploadingIndicator.IsRunning = false;
         }
@@ -58,23 +58,23 @@ namespace FindYourFood.Views
             {
                 return; //ItemSelected is called on deselection, which results in SelectedItem being set to null
             }
-            SelectedRecipe = e.Item as myRecipe;
+            SelectedRecipe = e.Item as User;
 
             RecipeWebViewPage recipeWebViewPage = null;
 
-            if ((e.Item as myRecipe) != null)
+            if ((e.Item as User) != null)
             {
-                myRecipe tempMyRecipe = e.Item as myRecipe;
+                User tempMyRecipe = e.Item as User;
 
-                List<myRecipe> list = await AzureManager.AzureManagerInstance.IsRecipeExists(SelectedRecipe);
+                List<User> list = await AzureManager.AzureManagerInstance.IsRecipeExists(SelectedRecipe);
 
                 if (list.Count > 0)
                 {
-                    tempMyRecipe.Existed = true;
+                    tempMyRecipe.isExisted = true;
                 }
                 else
                 {
-                    tempMyRecipe.Existed = false;
+                    tempMyRecipe.isExisted = false;
                 }
 
 

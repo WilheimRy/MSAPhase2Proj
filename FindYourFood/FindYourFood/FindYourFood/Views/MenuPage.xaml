@@ -5,8 +5,10 @@
   </ContentPage.Padding>
   <ContentPage.Content>
     <StackLayout BackgroundColor="White">
+      <Label x:Name="Label"></Label>
       <Button FontFamily="Lato" Text="Home" TextColor="White" BackgroundColor="Blue" Opacity="0.45" Command="{Binding GoHomeCommand}" />
       <Button FontFamily="Lato" Text="Favourites" TextColor="White" BackgroundColor="Navy" Command="{Binding GoSecondCommand}" />
+      <Button FontFamily="Lato" Text="LogOut" TextColor="White" BackgroundColor="Navy" Clicked="Button_OnClickedLogout" />
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>

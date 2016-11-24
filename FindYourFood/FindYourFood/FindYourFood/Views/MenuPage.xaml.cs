@@ -16,6 +16,14 @@ namespace FindYourFood.Views
             Title = "Menu";
             Icon = Device.OS == TargetPlatform.iOS ? "menu.png" : null;
             InitializeComponent();
+            Label.Text = Appl.Current.Properties["userName"].ToString();
+        }
+
+        private async void Button_OnClickedLogout(object sender, EventArgs e)
+        {
+            Appl.Current.Properties["userName"] = "";
+            await Navigation.PushAsync(new LoginPage());
+
         }
     }
 }

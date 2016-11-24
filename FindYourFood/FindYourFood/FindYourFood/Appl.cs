@@ -10,7 +10,7 @@ namespace FindYourFood
     public class Appl : Application
     {
 
-        public static NavigationPage NavigationPage { get; private set; }
+        public static NavigationPage NavigationPage { get; set; }
         public static RootPage RootPage;
 
         public static bool MenuIsPresented
@@ -28,14 +28,9 @@ namespace FindYourFood
         public Appl()
         {
             // The root page of your application
-            var menuPage = new MenuPage();
-            NavigationPage = new NavigationPage(new MainPage());
-            RootPage = new RootPage();
-            RootPage.Master = menuPage;
-            RootPage.Detail = NavigationPage;
-            MainPage = RootPage;
 
-//            MainPage = new Views.MainPage();
+            MainPage = new LoginPage();
+
         }
 
         protected override void OnStart()

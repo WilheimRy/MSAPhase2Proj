@@ -17,8 +17,12 @@ namespace FindYourFood.Views {
     public partial class MenuPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label Label;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MenuPage));
+            Label = this.FindByName<global::Xamarin.Forms.Label>("Label");
         }
     }
 }

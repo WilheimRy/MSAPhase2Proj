@@ -16,7 +16,7 @@ namespace FindYourFood.Views
 {
     public partial class MainPage : ContentPage
     {
-        public static myRecipe SelectedRecipe = null;
+        public static User SelectedRecipe = null;
         public MainPage()
         {
             InitializeComponent();
@@ -64,13 +64,13 @@ namespace FindYourFood.Views
 
             rootObject = JsonConvert.DeserializeObject<RecipeModel.RootObject>(x);
             // the data seems all right, show it in card view
-            ObservableCollection<myRecipe> recipeDisList = new ObservableCollection<myRecipe>();
+            ObservableCollection<User> recipeDisList = new ObservableCollection<User>();
             foreach (var hit in rootObject.hits)
             {
-                myRecipe recipeDisplayModel = new myRecipe();
+                User recipeDisplayModel = new User();
                 recipeDisplayModel.title = hit.recipe.label;
                 recipeDisplayModel.imgUrl = hit.recipe.image;
-                recipeDisplayModel.recipeUrl = hit.recipe.url;
+                recipeDisplayModel.favouriteUrl = hit.recipe.url;
                 recipeDisList.Add(recipeDisplayModel);
             }
 
@@ -87,7 +87,7 @@ namespace FindYourFood.Views
             if (SelectedRecipe != null)
             {
                 //search if the selected recipe exists
-                List<myRecipe> list = await AzureManager.AzureManagerInstance.IsRecipeExists(SelectedRecipe);
+                List<User> list = await AzureManager.AzureManagerInstance.IsRecipeExists(SelectedRecipe);
 
                 if (list.Count > 0)
                 {
@@ -112,23 +112,23 @@ namespace FindYourFood.Views
             {
                 return; //ItemSelected is called on deselection, which results in SelectedItem being set to null
             }
-            SelectedRecipe = e.Item as myRecipe;
+            SelectedRecipe = e.Item as User;
 
             RecipeWebViewPage recipeWebViewPage=null;
 
-            if ((e.Item as myRecipe) != null)
+            if ((e.Item as User) != null)
             {
-                myRecipe tempMyRecipe = e.Item as myRecipe;
+                User tempMyRecipe = e.Item as User;
 
-                List<myRecipe> list = await AzureManager.AzureManagerInstance.IsRecipeExists(SelectedRecipe);
+                List<User> list = await AzureManager.AzureManagerInstance.IsRecipeExists(SelectedRecipe);
 
                 if (list.Count > 0)
                 {
-                    tempMyRecipe.Existed = true;
+                    tempMyRecipe.isExisted = true;
                 }
                 else
                 {
-                    tempMyRecipe.Existed = false;
+                    tempMyRecipe.isExisted = false;
                 }
 
 
@@ -136,5 +136,6 @@ namespace FindYourFood.Views
             }
             await Navigation.PushAsync(recipeWebViewPage);
         }
+
     }
 }
